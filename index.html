@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rachael Serur for Launch Academy</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div class="planet">  
+    <div class="marsbg">
+        <img src="img/planetbg.png" alt="planet background">
+    </div>  
+    <div class="mars">
+        <img src="img/planet.png" alt="planet graphic">
+    </div>
+
+    <div class="launch">
+        <img id="launch" src="img/launch.png" alt="Launch Academy">
+    </div>
+</div>
+    <div class="me">
+        Rachael Serur for
+    </div>
+<div class="lines">    
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+<div class="why">
+	<img src="img/picture.jpg" alt="Me" class="pic">
+	<h1>Dear Launch Academy,</h1>
+	<p>I'm hoping to take part in your program because after an undergrad in psychology and 3+ years working in research and mental health, I'm  realizing the powerful impact that new, creative technological solutions can have. The expected next step for my current position is clinical work or academia, but I know that I am someone who needs to create something that contributes to social change in a very different way.</p>
+	<p>Now that I've take a few computer science courses, besides learning how incredibly fun raw coding is and remembering how awesome it feels to design pages, I can also see the potential that IT has to positively affect healthcare, well-being, and society at large. We live in a culture of self-starters; people tend to put it on themselves to live healthier and to better themselves, yet lose hope when things go wrong. IT can intervene on that level by producing increasingly interactive and intelligent self-care apps and inventions.</p>
+	<p>That's what I want to do with my career. I also want to branch out and learn as much as possible about other fields, integrating lifelong learning into my work. I can start next year when I have my masters in IT or I can start sooner with Launch Academy.</p>
+	<p>So I'm hoping you'll help me get there! Thank you so much for your consideration either way!</p>
+	<p>All the best,</p>
+	<p>Rachael</p>
+	<p>P.S. Here are some favorite sites-- the kind that, in one way or another, fulfill simple needs so extraordinarily that their success makes them seem perfectly commonplace: <a href="http://www.lifehacker.com" target="_blank">Lifehacker</a>, <a href="http://www.pinterest.com" target="_blank">Pinterest</a>, and <a href="http://www.ultimate-guitar.com" target="_blank">Ultimate Guitar</a>.
+</div>
+<script>
+
+var width = $(window).width(); 
+
+
+if (width <= 1600) {
+	$(".why").hide();
+}
+
+ // following code based on http://www.bnewton.co.uk/blog/animate-any-html-element-appear-to-float-in-space-using-anti-gravity-jquery-effects/
+ function float(obj,dist) {  
+    $(obj).animate({
+        'top': "+="+dist+"px"
+      }, 2200, "easeInOutQuad", function(){
+          $(obj).animate({
+          'top': "-="+dist+"px"
+        }, 1900, "easeInOutQuad", function(){
+              float(obj,dist);
+          });
+      });
+ }
+ 
+ $(document).ready(function() {
+
+ 	if (width <= 1600) {
+		$( "body" ).scrollTop( 300 ).scrollLeft ( 10 );
+ 		$(".why").delay(3000).show({direction: "left"}, 2000, "easeInOutQuad");
+ 	}
+ 
+     float('.launch', 7);
+     float('.line1', 7);
+     float('.line2', -7);
+     float('.line3', 7);
+     float('.mars', 3);
+     float('.marsbg', -2);
+     float('.me', 7);
+ });   
+</script>
+
+</body>
+</html>

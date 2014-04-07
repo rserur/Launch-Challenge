@@ -1,0 +1,109 @@
+/*	
+    tan = #D7BF9D
+    mars = #B54633
+    mustard = #BB8F2C
+    space = #493C34
+    
+*/
+
+body {
+    background-color: #493C34;
+    font-size: 62.5%;
+    line-height: 1.2em;
+}
+
+.mars {
+    position: absolute;
+    right: .02em;
+    top: .165em;
+    color: #B54633;
+    font-size: 280em;
+    padding:0;
+    margin-left: 20%;
+    
+}
+
+.launch {
+    font-family: 'Passion One', "Arial Black", "Arial Bold", Gadget, sans-serif; 
+    color: #D7BF9D;
+    font-size: 14em;
+    text-transform: uppercase;
+    position: absolute;
+    right: 1em;
+    top: 3.2em;
+}    
+/*    transform-origin: 0 0;
+    transform: rotateX(25deg);
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: perspective(10em) rotateY(-45deg);
+}
+*/
+
+span {
+ position: relative;   
+}
+
+.char1 {
+    font-size: 60%;
+    top: -.80em;
+}
+
+.char2 {
+    font-size: 70%;
+    top: -.6em;
+}
+
+.char3 {
+    font-size: 80%;
+    top: -.4em;
+}
+
+.char4 {
+    font-size: 90%;
+    top: -.3em;
+}
+
+.char5 {
+    font-size: 100%;
+    top: -.15em;
+}
+
+.char6 {
+    font-size: 110%;
+    top: -.070em;
+}
+
+.char7 {
+    font-size: 110%;
+}
+
+.char8 {
+    font-size: 140%;
+    top: .00em;
+}
+
+.char9 {
+    font-size: 140%;
+    top: .025em;
+}
+
+.char10 {
+    font-size: 140%;
+    top: .05em;
+}
+
+.char11 {
+    font-size: 120%;
+}
+.char12 {
+    font-size: 100%;
+    top: -.15em;
+}
+.char13 {
+    font-size: 80%;
+    top: -.35em;
+}
+.char14 {
+    font-size: 60%;
+    top: -.8em;        
+}

@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body { 
+    background: url(../img/bgtop.png), url(../img/lowerbg.png);
+    background-position: left top, left top;
+    background-repeat: no-repeat, repeat;  
+    background-attachment: fixed;
+    font-family: 'Montserrat', Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.planet {
+    position: absolute;
+    margin-left: 17em;
+    margin-top: .8em;
+}
+
+.marsbg {
+    z-index: 1;
+    position: inherit;
+}
+
+.mars {
+    z-index: 2;
+    position:inherit;
+}
+
+.launch {
+    z-index: 3;
+    position: inherit;
+    margin-top: 17.5em;
+    margin-left: 9.8em;
+    -webkit-transform: rotate(-27deg);
+    -ms-transform:rotate(-27deg);
+    -o-transform:rotate(-27deg);
+    -moz-transform:rotate(-27deg);    
+    transform: rotate(-27deg);
+}
+
+#launch {
+    position: relative;
+}
+
+.me {
+    position: absolute;
+    font-family: inherit;
+    color: #2B2420;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-27deg);
+    -ms-transform:rotate(-27deg);
+    -o-transform:rotate(-27deg);
+    -moz-transform:rotate(-27deg);    
+    transform: rotate(-27deg);
+    font-size: 2.4em;
+    margin-top: 15.8em;
+    margin-left: -.25em;
+    
+}
+
+.lines
+{
+    width: 2000px;
+    height: 1px;
+    position: absolute; 
+}
+
+.line1 {
+    z-index: 3;
+    width: inherit;
+    height: inherit;
+    border-bottom: 2px solid #F6B755;   
+    position: inherit;
+    margin-top: 18.9em;
+    margin-left: -8em;
+    -webkit-transform: rotate(-27deg);
+    -ms-transform:rotate(-27deg);
+    -o-transform:rotate(-27deg);
+    -moz-transform:rotate(-27deg);    
+    transform: rotate(-27deg);
+    
+}
+
+.line2 {
+    z-index: 0;
+    width: inherit;
+    height: inherit;
+    border-bottom: 2px solid #F6B755;   
+    position: inherit;
+    margin-top: 19.6em;
+    margin-left: -8em;
+    -webkit-transform: rotate(-27deg);
+    -ms-transform:rotate(-27deg);
+    -o-transform:rotate(-27deg);
+    -moz-transform:rotate(-27deg);    
+    transform: rotate(-27deg);
+}
+
+.line3 {
+    z-index: 3;
+    width: inherit;
+    height: inherit;
+    border-bottom: 2px solid #F6B755;   
+    position: inherit;
+    margin-top: 20.3em;
+    margin-left: -8em;
+    -webkit-transform: rotate(-27deg);
+    -ms-transform:rotate(-27deg);
+    -o-transform:rotate(-27deg);
+    -moz-transform:rotate(-27deg);    
+    transform: rotate(-27deg);    
+}
+
+h1 {
+    margin: .5em 1em;
+    color: #fec752;
+}
+
+p {
+    line-height: 1.5em;
+    margin: 1.5em 2em 1.5em 2em;
+}
+
+.why {
+    z-index: 4;
+    background-color: rgba(30, 18, 11, .93);
+    max-width: 600px;
+    width: 34%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    text-align: justify;
+    color: #fcf7ef;
+    font-size: .93em;
+    overflow: scroll;
+}
+
+a {
+    color: #fecf6c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E97B24;
+}
+
+a:visited {
+    color: #E97B24;
+
+}
+
+.pic {
+    width: 100%; 
+}
